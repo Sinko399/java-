@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education and Exponential Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .data-container {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            white-space: pre-wrap; /* Preserve whitespace */
+        }
+    </style>
+</head>
+<body>
+    <h1>Education Department Data</h1>
+    <div id="educationData" class="data-container"></div> <!-- Placeholder for education data -->
+
+    <h2>Exponential Calculations</h2>
+    <div id="exponentialData" class="data-container"></div> <!-- Placeholder for exponential variables -->
+
+    <script>
+        // Assignment 1: Education department variables using var
+        var totalStudents;
+        var averageClassSize;
+        var numberOfTeachers;
+        var graduationRate;
+        var enrollmentRate;
+        var studentSatisfactionScore;
+        var averageTestScores;
+        var attendanceRate;
+        var curriculumDevelopmentBudget;
+        var extracurricularActivities = [];
+        var facultyProfessionalDevelopment;
+        var technologyIntegration;
+        var specialEducationPrograms = [];
+        var maleDemographics;
+        var femaleDemographics;
+        var internationalDemographics;
+        var classroomResources;
+        var schoolFunding;
+        var mentorshipPrograms;
+        var afterSchoolPrograms = [];
+        var parentEngagementLevel;
+        var academicPerformanceMetrics = [];
+        var tutoringPrograms;
+        var disciplinaryActions;
+        var schoolFacilities = [];
+        var communityPartnerships = [];
+        var totalCourses;
+        var studentEnrollmentGrowth;
+        var teacherTurnoverRate;
+        var averageGrade;
+        var academicAdvisors;
+        var studentFeedbackScore;
+        var libraryResources;
+        var onlineCourseAvailability;
+        var tuitionFees;
+        var scholarshipsOffered;
+        var extracurricularParticipationRate;
+        var studentLoanDebtAverage;
+        var graduationRateByDemographics = {};
+        var facultyResearchOutput;
+        var classroomTechnology;
+        var mentorshipProgramParticipation;
+        var internshipOpportunities;
+        var parentCommunicationFrequency;
+        var curriculumAssessmentFrequency;
+        var staffProfessionalDevelopmentHours;
+        var alumniEngagementRate;
+        var safetyIncidents;
+        var foodServiceSatisfactionScore;
+        var internationalStudentRatio;
+        var communityServiceHours;
+        var academicCounselors;
+        var schoolBoardMeetings;
+
+        // Create a structured string for education data
+        var educationDataString = `
+            Total Students: ${totalStudents}
+            Average Class Size: ${averageClassSize}
+            Number of Teachers: ${numberOfTeachers}
+            Graduation Rate: ${graduationRate}
+            Enrollment Rate: ${enrollmentRate}
+            Student Satisfaction Score: ${studentSatisfactionScore}
+            Average Test Scores: ${averageTestScores}
+            Attendance Rate: ${attendanceRate}
+            Curriculum Development Budget: ${curriculumDevelopmentBudget}
+            Extracurricular Activities: ${extracurricularActivities.join(', ')}
+            Faculty Professional Development: ${facultyProfessionalDevelopment}
+            Technology Integration: ${technologyIntegration}
+            Special Education Programs: ${specialEducationPrograms.join(', ')}
+            Male Demographics: ${maleDemographics}
+            Female Demographics: ${femaleDemographics}
+            International Demographics: ${internationalDemographics}
+            Classroom Resources: ${classroomResources}
+            School Funding: ${schoolFunding}
+            Mentorship Programs: ${mentorshipPrograms}
+            After School Programs: ${afterSchoolPrograms.join(', ')}
+            Parent Engagement Level: ${parentEngagementLevel}
+            Academic Performance Metrics: ${academicPerformanceMetrics.join(', ')}
+            Tutoring Programs: ${tutoringPrograms}
+            Disciplinary Actions: ${disciplinaryActions}
+            School Facilities: ${schoolFacilities.join(', ')}
+            Community Partnerships: ${communityPartnerships.join(', ')}
+            Total Courses: ${totalCourses}
+            Student Enrollment Growth: ${studentEnrollmentGrowth}
+            Teacher Turnover Rate: ${teacherTurnoverRate}
+            Average Grade: ${averageGrade}
+            Academic Advisors: ${academicAdvisors}
+            Student Feedback Score: ${studentFeedbackScore}
+            Library Resources: ${libraryResources}
+            Online Course Availability: ${onlineCourseAvailability}
+            Tuition Fees: ${tuitionFees}
+            Scholarships Offered: ${scholarshipsOffered}
+            Extracurricular Participation Rate: ${extracurricularParticipationRate}
+            Student Loan Debt Average: ${studentLoanDebtAverage}
+            Graduation Rate by Demographics: ${JSON.stringify(graduationRateByDemographics)}
+            Faculty Research Output: ${facultyResearchOutput}
+            Classroom Technology: ${JSON.stringify(classroomTechnology)}
+            Mentorship Program Participation: ${mentorshipProgramParticipation}
+            Internship Opportunities: ${internshipOpportunities}
+            Parent Communication Frequency: ${parentCommunicationFrequency}
+            Curriculum Assessment Frequency: ${curriculumAssessmentFrequency}
+            Staff Professional Development Hours: ${staffProfessionalDevelopmentHours}
+            Alumni Engagement Rate: ${alumniEngagementRate}
+            Safety Incidents: ${safetyIncidents}
+            Food Service Satisfaction Score: ${foodServiceSatisfactionScore}
+            International Student Ratio: ${internationalStudentRatio}
+            Community Service Hours: ${communityServiceHours}
+            Academic Counselors: ${academicCounselors}
+            School Board Meetings: ${schoolBoardMeetings}
+        `;
+
+        // Log education data to the console
+        console.log("Education Department Data:");
+        console.log(educationDataString);
+
+        // Display education data in the browser
+        document.getElementById('educationData').textContent = educationDataString;
+
+        // Assignment 2: Exponential calculations using let
+        let initialValue = 1000;
+        let growthRate = 0.05; // 5%
+        let years = 5;
+
+        // Calculate exponential growth
+        let finalValue = initialValue * Math.pow((1 + growthRate), years);
+
+        // Prepare exponential data
+        let exponentialData = {
+            initialValue: initialValue,
+            growthRate: growthRate,
+            years: years,
+            finalValue: finalValue,
+        };
+
+        // Log exponential data to the console
+        console.log("Exponential Variables:", exponentialData);
+        
+        // Display exponential data in the browser
+        document.getElementById('exponentialData').textContent = 
+            JSON.stringify(exponentialData, null, 2);
+    </script>
+</body>
+</html>
